@@ -1,3 +1,8 @@
+*{
+  font-family: 'Playfair Display', serif;
+}
+
+
 .container-fluid{
     width: 96% !important;
 }
@@ -44,6 +49,14 @@
                     background-color: transparent;
                     color: #dcbb87;
                     border-color: #dcbb87;
+                    i{
+                      transform: rotate(0deg);
+                    }
+                }
+                i{
+                  transform: rotate(-50deg);
+                  margin-right: 5px;
+                  transition: all .3s ease;
                 }
             }
         }
@@ -172,3 +185,187 @@
   }
 }
 
+
+.second{
+  width: 100%;
+  height: 84vh;
+  background-color: #fff;
+  padding: 70px 0;
+  .left-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image:linear-gradient(360deg, rgba(25, 35, 45, 0.82) 3%, transparent 100%),url('/public/img/left.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .left-txt{
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-end;
+      align-items: flex-start;
+      padding-bottom: 45px;
+    }
+    h1{
+      color: #fff;
+      font-weight: 700;
+    }
+    p{
+      color: #fff;
+    }
+    a{
+      color: #dcbb87;
+      text-decoration: none;
+      i{
+        margin-right: 7px;
+      }
+    }
+  }
+  .right-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+     background-image:linear-gradient(360deg, rgba(25, 35, 45, 0.7) 100%, transparent 100%), url('/public/img/right.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #19232D;
+    .right-txt{
+      width: 100%;
+      height: 100%;
+      padding: 30px 40px;
+      h5{
+        color: white ;
+        font-size: 2.1rem;
+        span{
+          color: #dcbb87;
+        }
+      }
+      ul{
+        height: 87%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        li{
+          list-style-type: none;
+          width: 100%;
+          color: white;
+          border-bottom: 1px 
+          dashed white ;
+          font-weight: 700;
+          padding: 15px 0 23px 0;
+        }
+      }
+    }
+  }
+}
+
+.third{
+  width: 100%;
+  height: 80vh;
+  background-image:linear-gradient(-272deg, #19232d 15%, rgba(25, 25, 25, 0) 100%), url('/public/img/bg2.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .img{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    animation-name: animate2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes animate2 {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  .txt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h4{
+      color: #fff;
+      span{
+        color: #dcbb87;
+      }
+    }
+    h1{
+      color: #fff;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    p{
+      color: #fff;
+      line-height: 1.5;
+    }
+  }
+  .card-bottom{
+    width: 100%;
+    background-image: url('/public/img/bg3.png');
+    background-color: #fff;
+    height: auto;
+    padding: 20px ;
+    border-radius: 9px;
+    position: relative;
+    margin-top: 30px;
+    h2{
+font-weight: 700;
+    }
+    h3{
+
+    }
+    button{
+    text-align: center;
+    background-color: #dcbb87;
+    border-radius: 25px;
+    color: #19232d;
+    margin-left: 25px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    transition: all .3s ease;
+    padding: 12px 30px;
+    border: 1px solid #dcbb87;
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    &:hover{
+        background-color: transparent;
+        color: #dcbb87;
+    }
+    i{
+      margin-right: 6px;
+      animation-name: plane1;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    }
+    @keyframes plane1 {
+      0%{
+        transform: translateX(0);
+      }
+      50%{
+        transform: translateX(-6px);
+      }
+      100%{
+        transform: translateX(0);
+      }
+    }
+  }
+}
