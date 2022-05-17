@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './sass/style.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-
+// import img from 'public/img/logo.png';
 
 class Section1 extends Component{
   render(){
