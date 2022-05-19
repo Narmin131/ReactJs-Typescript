@@ -3,17 +3,20 @@ import ReactDOM from 'react-dom';
 import './sass/style.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-// import img from 'public/img/logo.png';
-
+import img from '././img/logo.png';
+import img1 from '././img/plane.png';
+import img2 from "././img/img.png";
+// import img3 from "img/bg1.png";
 class Section1 extends Component{
   render(){
     return(
-     <section className='first'>
+     <section className='first' style ={ { backgroundImage: "url('https://themeim.com/demo/flynext/assets/images/element/element-1.png')" } }>
        <header>
          <div className="container-fluid h-100">
            <div className="row h-100">
              <div className="col-lg-3 d-flex flex-column justify-content-center align-items-start h-100">
-               <img src="img/logo.png" alt="" />
+               <img src={img} alt="" />
+               {/* <img src="/img/logo.png" alt="" /> */}
              </div>
              <div className="col-lg-8">
                <ul>
@@ -41,7 +44,7 @@ class Section1 extends Component{
            </div>
            <div className="col-lg-7 p-0">
              <div className="img">
-             <img src="img/plane.png"  />
+             <img src={img1}  />
              </div>
            </div>
          </div>
@@ -59,7 +62,7 @@ class Section2 extends Component{
 <div className="container h-100">
   <div className="row h-100">
    <div className="col-lg-6 h-100">
-     <div className="left-img">
+     <div className="left-img" style ={ { backgroundImage: "url('https://themeim.com/demo/flynext/assets/images/overview/overview-1.png')" } }>
        <div className="left-txt">
          <h1>
 Business Jet Charter</h1>
@@ -70,7 +73,7 @@ Trade crowded airports and wasted time for the ease, comfort, and convenience of
      </div>
    </div>
    <div className="col-lg-6 h-100">
-     <div className="right-img">
+     <div className="right-img" style ={ { backgroundImage: "linear-gradient(360deg, rgba(25, 35, 45, 0.82) 3%, transparent 100%),url('https://themeim.com/demo/flynext/assets/images/overview/overview-2.png')" } }>
      <div className="right-txt">
      <h5><span>#1</span> Private Jet Charter</h5>
        <ul>
@@ -94,8 +97,8 @@ Trade crowded airports and wasted time for the ease, comfort, and convenience of
 class Section3 extends Component{
   render(){
     return(
-      <section className="third">
-   <img src="img/img.png" className='img'/>
+      <section className="third" style ={ { backgroundImage: "linear-gradient(-272deg, #19232d 15%, rgba(25, 25, 25, 0) 100%),url('https://themeim.com/demo/flynext/assets/images/bg/bg-1.png')" } }>
+   <img src={img2} className='img'/>
    <div className="container h-100">
      <div className="row h-100" >
        <div className="col-lg-7 h-100">
