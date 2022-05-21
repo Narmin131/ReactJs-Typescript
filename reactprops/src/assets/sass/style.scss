@@ -1,0 +1,234 @@
+
+nav{
+width: 100%;
+background: rgba(27, 34, 38, 0.8);
+backdrop-filter: blur(15px);
+height: 11vh;
+display: flex;
+flex-direction: row;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 45;
+::before{
+    content: '';
+    clear: both;
+}
+.logo{
+   width: 30%;
+   height: 100%; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.links{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        li{
+            list-style-type: none;
+            a{
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.btns{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    button{
+        outline: none;border: 2px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 15px ;
+        margin-left: .8rem ;
+    }
+}
+}
+
+.testimionals{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;  
+     background-color: rgba(25, 35, 40, 0.5);
+     background-color: #040C12;
+    backdrop-filter: blur(5px);
+    .box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-color: #23282B;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        opacity: .8;
+        color: #fff;
+        padding: 50px 40px;
+        h1{
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            text-align: center;
+            
+        }
+    }
+}
+
+.faq{
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    background-color: #040C12;
+    h1{
+        color: #fff;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+    p{
+        color: #00F09A;
+        font-size: 2.1rem;
+        font-weight:bold;
+        font-style: italic;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .accordion-item{
+        color: #fff;
+        background-color: #11181E ;
+        .accordion-button{
+            background-color: #11181E !important;
+            color: #fff !important;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 20px 15px ;
+        }
+    }
+
+}
+
+.footer{
+    height: 130vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    color: #fff;
+    
+    overflow: hidden;
+    h1{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    button{
+        outline: none;
+        margin: 0 10px;
+        border: none;
+        font-weight: 700;
+    }
+    .list{
+        background-color: #00FFA3;
+        color: black;
+        padding: 20px 30px;
+    }
+    .discord{
+        background-color: #5865F2;
+        color: #fff;
+        padding: 20px 30px;
+    }
+    i{
+        height: 60px;
+        width: 60px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.3rem;
+        margin: 0 15px;
+    }
+    .ft{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(20px);
+      .sol{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .sag{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .copy{
+          margin-left: 1.5rem;
+          font-size: 1.1rem;
+          font-weight: 700;
+         p{
+             margin: 0;
+         }
+      }
+      .div{
+          position: absolute;
+          bottom: 20%;
+          left: 46%;
+          i{
+              font-size: 1.3rem;
+              color: #fff;
+              background-color: transparent;
+              backdrop-filter: 0px;
+          }
+      }
+      .links{
+          position: absolute;
+          right: 40px;
+          bottom: 0;
+          height: 100%;
+          width: 35%;
+          ul{
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              height: 100%;
+              justify-content: space-between;
+              align-items: center;
+              li{
+                  list-style-type: none;
+                  a{
+                      text-decoration: none;
+                      color: #fff;
+                      font-weight: 700;
+                      font-size: 1.1rem;
+                  }
+              }
+          }
+      }
+    }
+}

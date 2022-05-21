@@ -1,1 +1,332 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+nav {
+  width: 100%;
+  background: rgba(27, 34, 38, 0.8);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  height: 11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 45;
+}
+
+nav ::before {
+  content: '';
+  clear: both;
+}
+
+nav .logo {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .links {
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .links ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+nav .links ul li {
+  list-style-type: none;
+}
+
+nav .links ul li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+nav .btns {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .btns button {
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+  margin-left: .8rem;
+}
+
+.testimionals {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  background-color: rgba(25, 35, 40, 0.5);
+  background-color: #040C12;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.testimionals .box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  opacity: .8;
+  color: #fff;
+  padding: 50px 40px;
+}
+
+.testimionals .box h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.faq {
+  width: 100%;
+  height: auto;
+  padding: 80px;
+  background-color: #040C12;
+}
+
+.faq h1 {
+  color: #fff;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.faq p {
+  color: #00F09A;
+  font-size: 2.1rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.faq .accordion-item {
+  color: #fff;
+  background-color: #11181E;
+}
+
+.faq .accordion-item .accordion-button {
+  background-color: #11181E !important;
+  color: #fff !important;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 20px 15px;
+}
+
+.footer {
+  height: 130vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.footer h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.footer button {
+  outline: none;
+  margin: 0 10px;
+  border: none;
+  font-weight: 700;
+}
+
+.footer .list {
+  background-color: #00FFA3;
+  color: black;
+  padding: 20px 30px;
+}
+
+.footer .discord {
+  background-color: #5865F2;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.footer i {
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin: 0 15px;
+}
+
+.footer .ft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.footer .ft .sol {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .ft .sag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.footer .ft .copy {
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.footer .ft .copy p {
+  margin: 0;
+}
+
+.footer .ft .div {
+  position: absolute;
+  bottom: 20%;
+  left: 46%;
+}
+
+.footer .ft .div i {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: transparent;
+  -webkit-backdrop-filter: 0px;
+          backdrop-filter: 0px;
+}
+
+.footer .ft .links {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  height: 100%;
+  width: 35%;
+}
+
+.footer .ft .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .ft .links ul li {
+  list-style-type: none;
+}
+
+.footer .ft .links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=style.css.map */
