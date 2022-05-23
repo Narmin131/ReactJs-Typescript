@@ -1,0 +1,228 @@
+body {
+  font-family: Inter, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: #4F2916;
+}
+
+header .borderr {
+  border-left: 3px dashed #fff;
+  border-right: 3px dashed #fff;
+}
+
+header p {
+  color: #fff;
+  font-size: .9rem;
+  margin: 0;
+}
+
+header p i {
+  margin-right: .3rem;
+}
+
+header h5, header h6 {
+  color: #fff;
+  font-size: .8rem;
+  margin: 0 1rem;
+  font-weight: 200;
+}
+
+header h5 i, header h6 i {
+  margin-left: .4rem;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px 13px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav ul li a:hover {
+  opacity: .8;
+  color: #000;
+}
+
+nav button {
+  margin: 0 1rem;
+  outline: none;
+  border: 1px solid #eaeaea;
+  padding: 6px 22px;
+}
+
+.cards {
+  width: 100%;
+  height: 100vh;
+  padding: 30px 0;
+}
+
+.cards h1 {
+  letter-spacing: 4px;
+  font-family: Inter, sans-serif;
+}
+
+.cards button {
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+.cards .box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cards .box .img {
+  background-color: #FDF8DF;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards .box .img .img-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 0;
+  z-index: 324;
+  background-color: #FDF8DF;
+}
+
+.cards .box .img .img-2 img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: drop-shadow(-15px 20px 10px #9AA385);
+          filter: drop-shadow(-15px 20px 10px #9AA385);
+}
+
+.cards .box .img img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: drop-shadow(-15px 20px 10px #9AA385);
+          filter: drop-shadow(-15px 20px 10px #9AA385);
+}
+
+.cards .box .img .icons {
+  width: 50%;
+  height: 10%;
+  position: absolute;
+  bottom: 15px;
+  left: 25%;
+  background-color: #23A21D;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  z-index: 345;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .box .img .icons i {
+  height: 100%;
+  width: 25%;
+  line-height: 210%;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.cards .box .img .icons i:hover {
+  background-color: #000;
+}
+
+.cards .box p {
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-family: Inter, sans-serif;
+}
+
+.cards .box h6 {
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  letter-spacing: 2px;
+}
+
+.cards .box:hover .img-2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.cards .box:hover .icons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=style.css.map */
