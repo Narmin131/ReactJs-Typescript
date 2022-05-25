@@ -31,7 +31,7 @@ class Cards extends Component {
       img1: img2,
       img11: img22,
       name1: "Arabica",
-      money1: "$4",
+      money1: "$14",
 
       img2: img3,
       img22: img33,
@@ -52,18 +52,18 @@ latestCoffee(){
     this.setState({
       img1: img7,
       img11: img77,
-      name1: "Arabica",
+      name1: "White",
       money1: "$4",
 
       img2: img8,
       img22: img88,
       name2: "Black",
-      money2: "$10-$17",
+      money2: "$25",
 
       img3: img9,
       img33: img99,
       name3: "Black",
-      money3: "$23",
+      money3: "$53",
 
       btnn:"active",
     });
@@ -73,12 +73,12 @@ lastCoffee(){
     img1: img,
     img11: imgg,
     name1: "Arabica",
-    money1: "$4",
+    money1: "$44",
 
     img2: img0,
     img22: img00,
     name2: "Black",
-    money2: "$10-$17",
+    money2: "$31",
 
     img3: img11,
     img33: img1,
