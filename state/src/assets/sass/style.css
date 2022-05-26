@@ -111,6 +111,20 @@ nav button {
   cursor: pointer;
 }
 
+.slider .text {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  left: 80px;
+  top: 140px;
+}
+
+.slider .text h1 {
+  letter-spacing: 3px;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+
 .cards {
   width: 100%;
   height: 120vh;
@@ -373,5 +387,21 @@ footer h4 i {
   letter-spacing: 2px;
   margin: 5px;
   background-color: transparent;
+}
+
+.navclass {
+  background-color: #fff;
+}
+
+.link {
+  color: #000;
+}
+
+.darkclass {
+  background-color: #000;
+}
+
+.darklink {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

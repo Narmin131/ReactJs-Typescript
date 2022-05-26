@@ -87,6 +87,18 @@ nav{
         right: 2%;
         cursor: pointer;
     }
+    .text{
+        width: 600px;
+        height: 500px;
+        position: absolute;
+        left:80px;
+        top: 140px;
+        h1{
+            letter-spacing: 3px;
+            font-size: 6.2rem;
+            font-weight: 700;
+        }
+    }
 }
 
 
@@ -306,4 +318,20 @@ footer{
         letter-spacing: 2px;
         margin: 5px;
         background-color: transparent;
+}
+
+
+.navclass{
+    background-color: #fff;
+}
+.link{
+    color: #000;
+}
+
+.darkclass{
+    background-color: #000;
+}
+
+.darklink{
+    color: #fff;
 }

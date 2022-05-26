@@ -27,6 +27,7 @@ class Cards extends Component {
     super(props);
     this.latestCoffee = this.latestCoffee.bind(this);
     this.lastCoffee = this.lastCoffee.bind(this);
+    this.main = this.main.bind(this);
     this.state = {
       img1: img2,
       img11: img22,
@@ -88,6 +89,27 @@ lastCoffee(){
     btnn:'active',
   });
 }
+
+main(){
+  this.setState({
+    img1: img2,
+    img11: img22,
+    name1: "Arabica",
+    money1: "$14",
+
+    img2: img3,
+    img22: img33,
+    name2: "Black",
+    money2: "$10-$17",
+
+    img3: img4,
+    img33: img44,
+    name3: "Black",
+    money3: "$23",
+
+    btnn:"active",
+  });
+}
   render() {
     return (
       <section className='cards'>
@@ -100,7 +122,7 @@ lastCoffee(){
               <img src={border} alt="" />
             </div>
             <div className="col-lg-12 d-flex justify-content-center p-3">
-              <button onClick={this.state} >All</button>
+              <button onClick={this.main} >All</button>
               <button onClick={this.latestCoffee} >Latest</button>
               <button onClick={this.lastCoffee} >Featured</button>
             </div>
