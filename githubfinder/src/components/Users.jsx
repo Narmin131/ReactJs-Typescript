@@ -6,11 +6,9 @@ export class Users extends Component {
     return (
       <div className="container p-0">
         <div className="row p-0">
-          
           {this.props.uservalue.map((user) => (
             <User user={user}/>
           ))}
-        
         </div>
       </div>
     );

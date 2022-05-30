@@ -1,0 +1,132 @@
+nav{
+    width: 100%;
+    height: 8vh;
+    background-color: #F195B2;
+    color: #fff;
+    display: flex;
+    .left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-weight: 700;
+            margin: 0;
+            i{
+                margin-right: 3px;
+            }
+        }
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        i{
+            margin: 0 10px;
+            font-size: 1.1rem;
+        }
+    }
+    .line{
+        color: #fff;
+        background-color: #fff;
+        width: 1px;
+        height: 22px;
+        margin: 0 10px;
+    }
+}
+
+header{
+    width: 100%;
+    height: 13vh;
+    background-color: burlywood;
+    .left-links{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        p{
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+    }
+    .right-links{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        p{
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    }
+    img{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+}
+
+
+footer{
+    width: 100%;
+    height: 76vh;
+    padding: 50px 0 0 0;
+    background-color: #303339;
+    h4{
+        color: #a8a8a8;
+        margin: 1.3rem 0;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    i{
+        color: #fff;
+        width: 2.5rem;
+        line-height: 2.2 !important;
+        text-align: center;
+        font-size: 1.1rem;
+        border: 1px solid #a8a8a8;
+        border-radius: 50%;
+        height: 2.5rem;
+        margin-right: 1rem;
+    }
+    h3{
+        color: #fff;
+        margin-bottom: 1.4rem;
+    }
+    p{
+        color: #a8a8a8;
+    }
+    h6{
+        color: #a8a8a8;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0;
+    }
+    .bor{
+        border-top: 1px solid #3b3e43;
+    }
+}
+
+.banner{
+    background-image: url("../img/banner-bg.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
