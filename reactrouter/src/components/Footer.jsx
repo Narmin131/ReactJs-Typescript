@@ -3,6 +3,7 @@ import logo from "../assets/img/footer-logo.png"
 export class Footer extends Component {
   render() {
     return (
+     
       <footer>
         <div className="container h-100">
           <div className="row h-100">
@@ -35,7 +36,6 @@ export class Footer extends Component {
               <p>256, baker Street,, New Youk, 5245
 </p>
 <p>cakebakery@contact.co.in</p>
-              
             </div>
             <div className="col-lg-12 d-flex justify-content-center align-items-center bor">
               <h6>© Copyright cakebakery WordPress WooCommerce Theme. All right reserved.</h6>
@@ -43,6 +43,8 @@ export class Footer extends Component {
           </div>
         </div>
       </footer>
+     
+     
     )
   }
 }

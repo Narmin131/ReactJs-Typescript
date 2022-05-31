@@ -6,7 +6,6 @@ import Contact from '../components/pages/Contact';
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
-
 class AppRouter extends Component {
   render() {
     return (
