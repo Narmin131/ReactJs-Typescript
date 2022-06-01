@@ -44,6 +44,7 @@ nav{
 header{
     width: 100%;
     height: 13vh;
+    position: relative;
     .left-links{
         width: 100%;
         height: 100%;
@@ -56,11 +57,47 @@ header{
         p{
             margin: 0;
             font-size: 1.2rem;
+            position: relative;
+            cursor: pointer;
+            &::after{
+                position: absolute;
+                content: '';
+                transition: all .5s ease;
+                width: 0;
+                height: 2px;
+                background-color: #F195B2;
+                bottom:-3px;
+                left: 0;
+            }
+            &:hover{
+                &::after{
+                    width: 45px;
+                    
+                }
+            }
         }
         a{
             text-decoration: none;
             color: #454545;
             font-size: 1.2rem;
+            position: relative;
+            cursor: pointer;
+            &::after{
+                position: absolute;
+                content: '';
+                transition: all .5s ease;
+                width: 0;
+                height: 2px;
+                background-color: #F195B2;
+                bottom:-3px;
+                left: 0;
+            }
+            &:hover{
+                &::after{
+                    width: 45px;
+                    
+                }
+            }
         }
     }
     .right-links{
@@ -75,12 +112,48 @@ header{
         p{
             font-size: 1.2rem;
             margin: 0;
+            position: relative;
+            cursor: pointer;
+            &::after{
+                position: absolute;
+                content: '';
+                transition: all .5s ease;
+                width: 0;
+                height: 2px;
+                background-color: #F195B2;
+                bottom:-3px;
+                left: 0;
+                cursor: pointer;
+            }
+            &:hover{
+                &::after{
+                    width: 40px;
+                    
+                }
+            }
         }
     }
-    img{
+    .imgg{
+        width: 190px;
+        height: 130px;
         background-color: #fff;
+        position: absolute;
+        top: 10px;
+        z-index: 345;
+        // border-bottom-right-radius:50% ;
+        // border-bottom-left-radius:50% ;
+        display: flex;
         border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      
+        img{
+        background-color: #fff;
+        
     }
+    }
+    
 }
 
 
@@ -208,10 +281,47 @@ footer{
 .hero{
     width: 100%;
     height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     .swiper-button-prev, .swiper-button-next{
         color: #fff;
     }
     .swiper-button-prev:after,  .swiper-button-next:after{
         font-size: 1.8rem;
+    }
+    .text{
+        width: 55%;
+        height: 60%;
+        position: absolute;
+        left: 50px;
+        top: 60px;
+        color: #fff;
+        h1{
+            font-weight: 700;
+            font-size: 3.3rem;
+            font-style: italic;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+        a{
+            background: #fff;
+            font-size: 18px;
+            color: #3e606b;
+            display: inline-block;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;
+            padding: 0px 43px;
+            line-height: 52px;
+            border-radius: 26px;
+            transition: all 300ms linear !important;
+            text-decoration: none;
+            &:hover{
+                background-color: #F195B2;
+                color: #fff;
+            }
+        }
     }
 }

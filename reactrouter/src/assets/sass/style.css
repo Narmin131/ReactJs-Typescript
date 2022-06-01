@@ -69,6 +69,7 @@ nav .line {
 header {
   width: 100%;
   height: 13vh;
+  position: relative;
 }
 
 header .left-links {
@@ -94,12 +95,48 @@ header .left-links {
 header .left-links p {
   margin: 0;
   font-size: 1.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+header .left-links p::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 0;
+  height: 2px;
+  background-color: #F195B2;
+  bottom: -3px;
+  left: 0;
+}
+
+header .left-links p:hover::after {
+  width: 45px;
 }
 
 header .left-links a {
   text-decoration: none;
   color: #454545;
   font-size: 1.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+header .left-links a::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 0;
+  height: 2px;
+  background-color: #F195B2;
+  bottom: -3px;
+  left: 0;
+}
+
+header .left-links a:hover::after {
+  width: 45px;
 }
 
 header .right-links {
@@ -125,11 +162,49 @@ header .right-links {
 header .right-links p {
   font-size: 1.2rem;
   margin: 0;
+  position: relative;
+  cursor: pointer;
 }
 
-header img {
+header .right-links p::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 0;
+  height: 2px;
+  background-color: #F195B2;
+  bottom: -3px;
+  left: 0;
+  cursor: pointer;
+}
+
+header .right-links p:hover::after {
+  width: 40px;
+}
+
+header .imgg {
+  width: 190px;
+  height: 130px;
   background-color: #fff;
+  position: absolute;
+  top: 10px;
+  z-index: 345;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+header .imgg img {
+  background-color: #fff;
 }
 
 footer {
@@ -286,6 +361,17 @@ footer .bor {
 .hero {
   width: 100%;
   height: 70vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero .swiper-button-prev, .hero .swiper-button-next {
@@ -294,5 +380,44 @@ footer .bor {
 
 .hero .swiper-button-prev:after, .hero .swiper-button-next:after {
   font-size: 1.8rem;
+}
+
+.hero .text {
+  width: 55%;
+  height: 60%;
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  color: #fff;
+}
+
+.hero .text h1 {
+  font-weight: 700;
+  font-size: 3.3rem;
+  font-style: italic;
+}
+
+.hero .text p {
+  font-size: 1.3rem;
+}
+
+.hero .text a {
+  background: #fff;
+  font-size: 18px;
+  color: #3e606b;
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px 43px;
+  line-height: 52px;
+  border-radius: 26px;
+  -webkit-transition: all 300ms linear !important;
+  transition: all 300ms linear !important;
+  text-decoration: none;
+}
+
+.hero .text a:hover {
+  background-color: #F195B2;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

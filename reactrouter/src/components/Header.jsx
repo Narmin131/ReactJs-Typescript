@@ -16,7 +16,9 @@ class Header extends Component {
                    </div>
                   </div>
                   <div className="col-lg-4 d-flex justify-content-center align-items-center">
+<div className="imgg">
 <img src={img} alt="" />
+</div>
                   </div>
                   <div className="col-lg-4 h-100">
                   <div className="right-links">

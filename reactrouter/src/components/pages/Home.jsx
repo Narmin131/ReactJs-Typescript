@@ -33,12 +33,22 @@ export class Home extends Component {
         width:"100%",
         height:"100%"
       }}/>
+      <div className="text">
+        <h1>Quality Cake <br />  with sweet, eggs & breads</h1>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia consequuntur magni dolores eos qui ratione</p>
+        <a href="">See the recipe</a>
+      </div>
       </SwiperSlide>
       <SwiperSlide>
          <img src={bg2} alt="" style={{
         width:"100%",
         height:"100%"
       }}/>
+      <div className="text">
+        <h1>Quality Cake <br />  with sweet, eggs & breads</h1>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia consequuntur magni dolores eos qui ratione</p>
+        <a href="">See the recipe</a>
+      </div>
       </SwiperSlide>
       
     </Swiper>
