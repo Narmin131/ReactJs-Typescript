@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+nav {
+  width: 100%;
+  height: 20vh;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #253D4E;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav .left {
+  width: 100%;
+  height: 70%;
+  background-color: #29A56C;
+  border-radius: 7px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+nav .left p {
+  font-weight: 700;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+nav .left .second {
+  left: 10px;
+  position: absolute;
+  top: 30%;
+}
+
+nav .left .third {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+nav .right {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .right h2 {
+  font-weight: 700;
+  color: #29A56C;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+
+.products h2 {
+  color: #253D4E;
+  font-weight: 700;
+}
+
+.products a {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #253D4E;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.products a:hover {
+  color: #29A56C !important;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.products .box {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ececec;
+  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 20px 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.products .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.products .box img {
+  width: 80%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  height: 80%;
+}
+
+.products .box p {
+  font-weight: 700;
+  text-align: center;
+}
+
+.products .box .text {
+  width: 100%;
+  height: 20%;
+  z-index: 789;
+}
+
+.products .box .add {
+  position: relative;
+  display: inline-block;
+  padding: 6px 20px 6px 20px;
+  border-radius: 4px;
+  background-color: #DEF9EC;
+  font-size: 14px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
