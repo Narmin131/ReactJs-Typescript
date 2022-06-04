@@ -95,7 +95,7 @@ function ThirdItem(){
                             <div className="box">
 
                                 {count.map((map)=>(
-                                   <img src={map.one} alt="" className='animate__fadeIn animate__animated'/>
+                                   <img src={map.one} alt="" />
                                 ))}
                                    
                                     <div className="text">
@@ -107,8 +107,9 @@ function ThirdItem(){
                         </div>
                         <div className="col-lg-3 pt-5">
                             <div className="box">
+                                
                             {count.map((map)=>(
-                                   <img src={map.two} alt="" className='animate__fadeIn animate__animated'/>
+                                   <img src={map.two} alt="" />
                                 ))}
                                     <div className="text">
                                     <p>All Natural Italian-Style Chicken Meatballs</p>
@@ -120,8 +121,9 @@ function ThirdItem(){
                         </div>
                         <div className="col-lg-3 pt-5">
                             <div className="box">
+                                
                             {count.map((map)=>(
-                                   <img src={map.three} alt="" className='animate__fadeIn animate__animated'/>
+                                   <img src={map.three} alt="" />
                                 ))}
                                     <div className="text">
                                     <p>Angie’s Boomchickapop Sweet & Salty Kettle Corn</p>
@@ -134,7 +136,7 @@ function ThirdItem(){
                         <div className="col-lg-3 pt-5">
                             <div className="box">
                             {count.map((map)=>(
-                                   <img src={map.four} alt="" className='animate__fadeIn animate__animated'/>
+                                   <img src={map.four} alt="" />
                                 ))}
                                     <div className="text">
                                     <p>Foster Farms Takeout Crispy Classic Buffalo Wings</p>
