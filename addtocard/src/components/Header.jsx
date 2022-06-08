@@ -2,15 +2,18 @@ import React from 'react'
 import logo from "../assets/img/logo.svg"
 import { NavLink } from 'react-router-dom'
 import { useState } from "react"
+import { useCart } from 'react-use-cart'
 import Cart from "../components/Cart"
 const Header = () => {
-
+    
     const [isOpen, setIsopen] = useState(false);
 
     const ToggleSidebar = () => {
         isOpen === true ? setIsopen(false) : setIsopen(true);
     }
 
+     const {totalItems} = useCart();
+     
     return (
         <>
             <header>
@@ -35,7 +38,7 @@ const Header = () => {
                                 <i class="fa-regular fa-heart"></i><br />
                                 <i class="fa-solid fa-cart-shopping" onClick={ToggleSidebar}></i>
                                 <div>
-                                    0
+                                    <p>{totalItems}</p>
                                 </div>
                             </div>
                         </div>
@@ -46,11 +49,13 @@ const Header = () => {
 
             <div className={`sidemenu ${isOpen == true ? 'active' : ''}`}>
 
-                <div className="head">
+               <div className="all">
+               <div className="head">
                     <p>Shopping Cart</p>
                     <i class="fa-solid fa-xmark" onClick={ToggleSidebar}></i>
                 </div>
                 <Cart/>
+               </div>
             </div>
 
             <div className={`overlay ${isOpen == true ? 'activ' : ''}`} onClick={ToggleSidebar}></div>

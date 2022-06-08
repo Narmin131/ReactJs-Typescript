@@ -13,49 +13,49 @@ import img8 from "../assets/img/product8.jpg"
 const data = {
     productData: [
         {
-            id:0,
+            id:1,
             img:img,
             img1:img1,
             title: "3D Geometric Candlestick",
             price:232.00
         },
         {
-            id:1,
+            id:2,
             img:img2,
             img1:img22,
             title: "Hanging Ball Glass",
             price: 235.00
         },
         {
-            id:2,
+            id:3,
             img:img3,
             img1:img33,
             title: "Wall Stickers Clock",
             price: 210.00
         },
         {
-            id:3,
+            id:4,
             img:img4,
             img1:img44,
             title: "Lamp Black Wall",
             price: 245.00
         },
         {
-            id:4,
+            id:5,
             img:img5,
             img1:img44,
             title: "Lamp Black Wall",
             price: 245.00
         },
         {
-            id:5,
+            id:6,
             img:img6,
             img1:img44,
             title: "Lamp Black Wall",
             price: 245.00
         },
         {
-            id:6,
+            id:7,
             img:img7,
             img1:img44,
             title: "Lamp Black Wall",

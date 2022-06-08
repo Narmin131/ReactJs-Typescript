@@ -163,7 +163,7 @@ header{
 
 
 .sidemenu{
-    width: 300px;
+    width: 370px;
     height: 100vh;
     position: fixed;
     background-color: #fff;
@@ -172,10 +172,12 @@ header{
     right: 0;
     transition: all .3s ease;
     transform: translateX(100%);
+    .all{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
     .head{
-        position: absolute;
-        top: 0;
-        left: 0;
         height: auto;
         width: 100%;
         border-bottom: 1px solid rgba(0,0,0,.105);
@@ -195,8 +197,20 @@ header{
     }
     .text{
         width: 100%;
+        position: absolute;
+        border-top: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+        bottom: 0;
+        left: 0;
         height: auto;
-        background-color: aquamarine;
+        // display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:20px 14px;
+        p{
+            font-weight: 700;
+            margin: 0;
+        }
     }
 
 }
@@ -226,4 +240,79 @@ header{
 .overlay.activ{
     opacity: 1;
     visibility: visible;
+}
+
+
+.products2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    .product{
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(0,0,0,.105);
+        display: flex;
+        flex-direction: row;
+        transition: all .3s ease;
+       align-items: center;
+       position: relative;
+       cursor: pointer;
+       padding: 9px 15px;
+       &:hover{
+           background-color: #f7f7f7;
+       }
+       img{
+           width: 100px;
+       }
+       .i{
+           position: absolute;
+           right: 10px;
+           top: 10px;
+       }
+       .middle{
+           padding-left: 20px ;
+           span{
+            padding: 7px 12px;
+            background: transparent;
+            box-shadow: none;
+            border: 1px solid #acc7bf;
+            transition: all .3s ease;
+            cursor: pointer;
+            &:hover{
+                background-color: #9ebfb5;
+                color: #fff;
+            }
+           }
+           p{
+               font-weight: 700;
+           }
+           h5{
+               margin-top: 20px;
+               font-weight: 700;
+               p{
+                font-weight: 700;
+                color: #9ebfb5;
+                display: inline;
+               }
+           }
+       }
+       .close{
+          width: 20px;
+          background-color: transparent;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          transition: all .3s ease;
+          border-radius: 50%;
+          &:hover{
+              background-color: #a5a5a5;
+          }
+       }
+    }
+}
+
+i{
+    cursor: pointer;
 }

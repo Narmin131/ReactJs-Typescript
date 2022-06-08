@@ -6,6 +6,7 @@ import Header from "../Header"
 const Home = () => {
   return (
     <>
+    
     <Nav/>
     <Header/>
     <Products/>

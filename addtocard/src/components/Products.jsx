@@ -1,8 +1,11 @@
 import React from 'react'
 import Product from './Product'
 import Data from "./Data"
-const Products = () => {
-  return (
+import { Component } from 'react'
+
+class Products extends Component {
+  render(){
+     return (
     <section className='products'>
       <div className="container">
         <div className="row">
@@ -12,7 +15,8 @@ const Products = () => {
               img={item.img}
               img1={item.img1}
               title={item.title}
-              price={item.price}
+              price1={item.price}
+              product={item}
               key={acar}
               />
             )
@@ -21,6 +25,8 @@ const Products = () => {
       </div>
     </section>
   )
+  }
+ 
 }
 
 export default Products
