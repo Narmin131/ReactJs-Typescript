@@ -37,14 +37,14 @@ const data = {
             id:4,
             img:img4,
             img1:img44,
-            title: "Lamp Black Wall",
-            price: 245.00
+            title: "Glass Ball Planter",
+            price: 248.00
         },
         {
             id:5,
             img:img5,
             img1:img44,
-            title: "Lamp Black Wall",
+            title: "Candlestick Metal",
             price: 245.00
         },
         {
@@ -52,20 +52,20 @@ const data = {
             img:img6,
             img1:img44,
             title: "Lamp Black Wall",
-            price: 245.00
+            price: 205.00
         },
         {
             id:7,
             img:img7,
             img1:img44,
-            title: "Lamp Black Wall",
-            price: 245.00
+            title: "Lamp Night Light",
+            price: 219.00
         },
         {
             id:8,
             img:img8,
             img1:img44,
-            title: "Lamp Black Wall",
+            title: "Minimalist Diverse",
             price: 245.00
         }
     ]

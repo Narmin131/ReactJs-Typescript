@@ -9,6 +9,11 @@ class Products extends Component {
     <section className='products'>
       <div className="container">
         <div className="row">
+          <div className="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <h4>WOODEN ACCESSORIES</h4>
+            <h2>Featured Products</h2>
+            <p>Will your clients accept that you go about things order.</p>
+          </div>
           {Data.productData.map((item,acar)=>{
             return(
               <Product

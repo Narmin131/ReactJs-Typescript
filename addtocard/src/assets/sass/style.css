@@ -89,6 +89,22 @@ header .right div {
   padding: 30px 0;
 }
 
+.products h4 {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.products h2 {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.products p {
+  color: #777777;
+  font-weight: 300;
+  font-size: 13px;
+}
+
 .products .box {
   width: 100%;
   height: 100%;
@@ -419,5 +435,95 @@ header .right div {
 
 i {
   cursor: pointer;
+}
+
+.partners {
+  height: auto;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.partners img {
+  width: 80%;
+  height: 89%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.gallery {
+  width: 100%;
+  height: auto;
+  padding: 45px 0;
+}
+
+.gallery .boxx {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery .boxx .div1, .gallery .boxx .div2 {
+  width: 100%;
+  height: 48%;
+  overflow: hidden;
+}
+
+.gallery .boxx img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.gallery .boxx img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gallery .box2 {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery .box2:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gallery .box2 img {
+  width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+.hero img {
+  width: 100%;
+  height: 680px;
+}
+
+.hero .swiper-button-next, .hero .swiper-button-prev {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
