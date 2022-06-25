@@ -1,4 +1,3 @@
-
 import React from "react";
 import ReactDOM from "react-dom";
 import { combineReducers, createStore } from "redux";
@@ -15,9 +14,6 @@ const addBlog = ({basliq,aciqlama})=>({
 })
 // Action End
 
-
-
-
 //Blog Reducer Start
 const blogState = [];
 const blogReducer = (state = blogState, action)=>{
@@ -27,14 +23,11 @@ const blogReducer = (state = blogState, action)=>{
         ...state,
         action.blog
       ]
-      
       default:
         return state;
   }
 }
 //Blog Reducer End
-
-
 
 
 // Store Start
@@ -48,6 +41,7 @@ const store = createStore(
 
 
 // dispatch Start
+
 store.subscribe(()=>{
   console.log(store.getState());
 })
