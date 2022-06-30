@@ -15,7 +15,7 @@ const Nav = () => {
             <NavLink className="nav-link " to="/" >Home</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link"  to="blogs">Blogs</NavLink>
+            <NavLink className="nav-link"  to="/blogs">Blogs</NavLink>
           </li>
           <li className="nav-item">
             <a className="nav-link" >Demos</a>
@@ -30,6 +30,9 @@ const Nav = () => {
             <a className="nav-link" >Contact</a>
           </li>
         </ul>
+        <div className="d-flex" >
+          <Link className="btn btn-outline-light" to="/addblog">Add Blog</Link>
+        </div>
       </div>
     </div>
   </nav>

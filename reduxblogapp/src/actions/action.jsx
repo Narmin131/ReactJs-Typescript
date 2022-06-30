@@ -14,7 +14,7 @@ export const removeBlog = ({id})=>({
     id:id
 })
 
-export const editblog = (id,update)=>({
+export const editBlog = (id,update)=>({
     type:"edit_blog",
     id,
     update
