@@ -15,6 +15,9 @@ const reducer = (state= blogstate,action)=>{
                         ...action.update
                     }
                 }
+                else{
+                    return blog;
+                  }
             })
         default:
             return state;

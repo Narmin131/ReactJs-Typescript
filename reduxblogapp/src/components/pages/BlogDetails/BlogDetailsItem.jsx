@@ -1,11 +1,11 @@
 import React from 'react'
 
-const BlogDetailsItem = ({id,title,desk}) => {
+const BlogDetailsItem = ({id,title,desc}) => {
   return (
-    <div>
-        <p className='text-primary'>Blog ID: <span className='text-dark'>{id}</span></p>
-        <p className='text-danger'>Blog Title: <span className='text-dark'>{title}</span> </p>
-        <p className='text-success'>Blog Description:<span className='text-dark'>{desk}</span></p>
+    <div className='container'>
+        <p style={{fontWeight:"bold",textAlign:"center"}}>Blog ID: <span className='text-dark'>{id}</span></p>
+        <p style={{fontWeight:"bold",textAlign:"center"}}>Blog Title: <span className='text-dark'>{title}</span> </p>
+        <p style={{fontWeight:"bold",textAlign:"center"}}>Blog Description:<span className='text-dark'>{desc}</span></p>
     </div>
   )
 }

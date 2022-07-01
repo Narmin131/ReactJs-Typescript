@@ -1,11 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const addBlog = ({basliq,aciqlama}) =>({
+export const addBlog = ({title,desc}) =>({
     type:"add_blog",
     blog:{
         id:uuidv4(),
-        title:basliq,
-        desc:aciqlama,
+        title:title,
+        desc:desc,
     }
 })
 

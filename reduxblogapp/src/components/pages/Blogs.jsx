@@ -6,8 +6,8 @@ const Blogs = (props) => {
   return (
     <div className="container pt-3">
     <div className='row'>
-      {props.deyer.map(senan=>{
-        return <BlogListItem key={senan.id} {...senan}/>
+      {props.deyer.map(calldata=>{
+        return <BlogListItem key={calldata.id} {...calldata}/>
       })}
     </div>
     </div>

@@ -4,8 +4,8 @@ export class BlogForm extends Component {
     constructor(props){
             super(props);
             this.state={
-                title:props.blog? props.blog.title:"",
-                desk:props.blog? props.blog.desk:"",
+                title:props.editBlog? props.editBlog.title:"",
+                desc:props.editBlog? props.editBlog.desc:"",
                 err:""
             }
     }
@@ -15,18 +15,18 @@ export class BlogForm extends Component {
     }
 
     onDescChange=(e)=>{
-        const desk=e.target.value;
-        this.setState(()=>({desk}))
+        const desc=e.target.value;
+        this.setState(()=>({desc}))
     }
     onTesdiq=(e)=>{
         e.preventDefault();
-        if (!this.state.title || !this.state.desk) {
+        if (!this.state.title || !this.state.desc) {
             this.setState({err: "Xanalari doldurun!"})
         }else{
             this.setState({err:""})
             this.props.onFormSubmit({
-                basliq: this.state.title,
-                aciqlama: this.state.desk
+                title: this.state.title,
+                desc: this.state.desc
             })
         }
     }
@@ -41,14 +41,12 @@ export class BlogForm extends Component {
         <form onSubmit={this.onTesdiq}>
         <div className="mb-3">
           <label className="form-label">Add Title</label>
-          <input onChange={this.onTitleChange} type="text" className="form-control"  />
+          <input onChange={this.onTitleChange} value={this.state.title} type="text" className="form-control"  />
         </div>
         <div className="mb-3">
           <label  className="form-label">Add Description</label>
-          <input onChange={this.onDescChange} type="text" className="form-control" />
+          <input onChange={this.onDescChange} value={this.state.desc} type="text" className="form-control" />
         </div>
-            {/* <p>t:{this.state.title}</p>
-            <p>d:{this.state.desk}</p> */}
         <button type="submit" className="btn btn-primary">Save</button>
       </form>
       </div>
