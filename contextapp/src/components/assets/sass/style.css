@@ -209,4 +209,34 @@ footer h1 {
 .main h3 span {
   font-weight: bold;
 }
+
+.stories {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  background-color: var(--bg);
+  color: var(--textColor);
+  border-top: 1px solid #4b4f52;
+}
+
+.stories .box {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+}
+
+.stories .box img {
+  width: 90%;
+  height: 50%;
+  border-radius: 8%;
+}
+
+.stories .box h3 {
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.stories .box p {
+  font-size: 15px;
+}
 /*# sourceMappingURL=style.css.map */
