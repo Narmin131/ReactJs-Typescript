@@ -1,8 +1,16 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
 import img from "../assets/img/img.png"
+import { useTranslation } from 'react-i18next'
+import "../../i18"
+import State from './State'
 
 const Home = () => {
+     
+    const { t, i18n } = useTranslation();
+    const handleClick = (lang) => {
+        i18n.changeLanguage(lang);
+    }
     const [theme,setTheme] = useState("light");
 
     const ChangeMode = () =>{
@@ -21,37 +29,47 @@ const Home = () => {
                     <div className="col-lg-2">
                         <h1>Sera</h1>
                     </div>
-                    <div className="col-lg-8">
+                    <div className="col-lg-9">
                         <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Features</li>
-                            <li>Portfolios</li>
-                            <li>Blog</li>
-                            <li>Team</li>
-                            <li>Prices</li>
-                            <li>Contact</li>
+                            <li>{t('nav.0')}</li>
+                            <li>{t('nav.1')}</li>
+                            <li>{t('nav.2')}</li>
+                            <li>{t('nav.3')}</li>
+                            <li>{t('nav.4')}</li>
+                            <li>{t('nav.5')}</li>
+                            <li>{t('nav.6')}</li>
+                            <li>{t('nav.7')}</li>
                             <button 
                             className='btn btn-light fw-bold'
                             onClick={ChangeMode}>Mode</button>
+                            <button 
+                            className='btn btn-light fw-bold'
+                            onClick={() => handleClick('az')}
+                            >Az</button>
+                            <button 
+                            className='btn btn-light fw-bold'
+                            onClick={() => handleClick('en')}
+                            >Eng</button>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
         <div className="main">
-            <h4>WE ALWAYS</h4>
-            <h2>CREATE THE <span>IMPOSSIBLE</span></h2>
+            <h4>{t('hero.0')}</h4>
+            <h2>{t('hero.1')}</h2>
             <div className="btns">
              <button>Download Now</button>
              <button>Discover More</button>
             </div>
         </div>
     </div>
-
+   
     <div className="features">
      <img src={img} alt="" />
     </div>
+
+    <State/>
     </>
   )
 }

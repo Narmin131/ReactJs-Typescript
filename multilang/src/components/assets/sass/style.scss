@@ -65,3 +65,24 @@
         width: 450px;
     }
 }
+
+
+.btns1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2e3e7;
+    padding: 10px 0;
+    button{
+        border: none;
+        margin: 0 5px;
+        background-color: transparent;
+        color: #06283D;
+    }
+}
+
+.opacity{
+    opacity: .6;
+}

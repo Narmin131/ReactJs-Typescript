@@ -1,0 +1,16 @@
+{
+    "nav": {
+        "0":"Home",
+        "1": "About",
+        "2":"Features",
+        "3":"Portfolios",
+        "4":"Blog",
+        "5":"Team",
+        "6":"Prices",
+        "7":"Contact "
+    },
+    "hero":{
+        "0":"WE ALWAYS",
+        "1":"CREATE THE IMPOSSIBLE"
+    }
+}
