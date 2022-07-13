@@ -20,6 +20,8 @@ const Home = () => {
     useEffect(()=>{
       document.body.className = theme;
     },[theme])
+
+    
   return (
     <>
     <div className="hero">
@@ -69,6 +71,11 @@ const Home = () => {
      <img src={img} alt="" />
     </div>
 
+
+    <div className="ara">
+        <h4>SERA IS YOUR LAST TEMPLATE THEME EVER!</h4>
+        <button>Buy Now</button>
+    </div>
     <State/>
     </>
   )
