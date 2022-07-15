@@ -1,11 +1,11 @@
 .light{
-    --bg:url("../img/1.jpg");
+    --bg: url("../img/1.jpg");
     --btn:#C9C8B6;
     --bg1:#21C2F8;
 }
 
 .dark{
-    --bg:url("../img/2.jpg");
+    --bg: url("../img/2.jpg");
     --bg1:rgb(26, 49, 35);
     --btn:#6ba78f;
 }
@@ -68,6 +68,28 @@
     img{
         width: 450px;
     }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top: 50px;
+        li{
+            list-style-type: none;
+        }
+        h5{
+            list-style-type: none;
+            font-size: 30px;
+            color: #39778e;
+            font-weight: 700;
+            line-height: 2.3;
+            
+        }
+        p{
+                font-size: 16px;
+                color: #C9C8B6;
+            }
+    }
 }
 
 
@@ -117,3 +139,4 @@
         padding: 15px 45px;
     }
 }
+

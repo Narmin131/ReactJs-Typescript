@@ -12,5 +12,9 @@
     "hero":{
         "0":"BIZ HEMISE",
         "1":"SECILIRIK"
+    },
+    "btn":{
+       "0":"Yukle",
+       "1":"Kesf et"
     }
 }

@@ -12,5 +12,9 @@
     "hero":{
         "0":"WE ALWAYS",
         "1":"CREATE THE IMPOSSIBLE"
-    }
+    },
+    "btn":{
+        "0":"Download",
+        "1":"Discover"
+     }
 }

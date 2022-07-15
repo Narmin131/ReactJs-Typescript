@@ -34,7 +34,9 @@ const State = () => {
     const first = () =>{
         var a = document.querySelectorAll('.a');
         var b = document.querySelectorAll('.b');
+        var c = document.querySelectorAll('.img');
         for(var i=0;i<a.length;i++){
+            c[i].classList.remove('op')
             a[i].classList.toggle("opacity")
             b[i].classList.remove("opacity")
         }
@@ -43,7 +45,10 @@ const State = () => {
     const second = () =>{
         var a = document.querySelectorAll('.a');
         var b = document.querySelectorAll('.b');
+        
+        var c = document.querySelectorAll('.img');
         for(var i=0;i<b.length;i++){
+            c[i].classList.remove('op')
             a[i].classList.remove("opacity")
             b[i].classList.toggle("opacity")
         }
