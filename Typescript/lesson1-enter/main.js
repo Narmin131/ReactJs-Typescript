@@ -1,10 +1,10 @@
-// let infoOne : number;
+var infoOne;
 // let infoTwo : string;
 // let infoThree : boolean;
-// infoOne = 7;
+infoOne = 7;
 // infoTwo = "salam";
 // infoThree = true;
-// console.log(infoOne);
+console.log(infoOne);
 // console.log(infoTwo);
 // console.log(infoThree);
 // let infoArr : Array<number> = [1,4,3,4,5];

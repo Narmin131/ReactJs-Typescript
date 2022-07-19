@@ -1,12 +1,12 @@
-// let infoOne : number;
+let infoOne : number;
 // let infoTwo : string;
 // let infoThree : boolean;
 
-// infoOne = 7;
+infoOne = 7
 // infoTwo = "salam";
 // infoThree = true;
 
-// console.log(infoOne);
+console.log(infoOne);
 // console.log(infoTwo);
 // console.log(infoThree);
 
