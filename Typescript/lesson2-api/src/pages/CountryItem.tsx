@@ -7,10 +7,10 @@ const CountryItem = ({
   region,
   capital,
   flag
-}: SingleCountry) => {
+}: SingleCountry ) => {
 
   return (
-              <div className="col-lg-4 p-3" >
+              <div className="col-lg-3 p-3" >
                 <div className="card" style={{ width: '100%',height:'100%' }}>
                   <img src={flag} className="card-img-top"  style={{ width: '100%',height:'100%' }}/>
                   <div className="card-body">
