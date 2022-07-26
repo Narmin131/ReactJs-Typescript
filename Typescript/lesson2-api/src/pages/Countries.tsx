@@ -9,6 +9,8 @@ const Countries = () => {
 
   useEffect(() => {
 
+//Axios library
+
     axios
       .get('https://restcountries.com/v2/all')
       .then(res => setCountry(res.data))
@@ -16,7 +18,7 @@ const Countries = () => {
 
   }, [])
 
-
+//Fetch metodu
 
   // useEffect(() => {
 
