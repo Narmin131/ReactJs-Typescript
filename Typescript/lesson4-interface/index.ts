@@ -2,12 +2,14 @@
 // console.log(a);
 
 // add, get, update, delete
+
 // interface IDatabase {
 //   add();
 //   get();
 //   update();
 //   delete();
 // }
+
 // class MySql implements IDatabase {
 //   add() {
 //     console.log("MySql Add");
@@ -22,6 +24,7 @@
 //     console.log("MySql delete");
 //   }
 // }
+
 // class MongoDB implements IDatabase {
 //     add() {
 //       console.log("MongoDB Add");
@@ -36,44 +39,47 @@
 //       console.log("MongoDB delete");
 //     }
 //   }
+
 // function AddDatabase(database:IDatabase){
 //         database.add();
 // }
 // function DeleteDatabase(database:IDatabase){
 //     database.delete();
 // }
+
 // AddDatabase(new MySql());
 // AddDatabase(new MongoDB());
 // DeleteDatabase(new MySql());
-// var Database = /** @class */ (function () {
-//     function Database() {
-//     }
-//     Database.prototype.add = function () {
-//         console.log('add database');
-//     };
-//     Database.prototype.get = function () {
-//         console.log('get database');
-//     };
-//     return Database;
-// }());
-// var MySql = /** @class */ (function (_super) {
-//     __extends(MySql, _super);
-//     function MySql() {
-//         return _super !== null && _super.apply(this, arguments) || this;
-//     }
-//     MySql.prototype.add = function () {
-//         console.log('add mysql');
-//     };
-//     MySql.prototype.update = function () {
-//         console.log("update mysql");
-//     };
-//     MySql.prototype["delete"] = function () {
-//         console.log('delete mysql');
-//     };
-//     return MySql;
-// }(Database));
 
-// function addDatabase(database) {
+// abstract class Database {
+//     add(){
+//         console.log('add database');
+        
+//     }
+//     get(){
+//         console.log('get database');
+
+//     }
+//    abstract update();
+//    abstract delete();
+// }
+
+// class MySql extends Database{
+//     add(){
+//         console.log('add mysql');
+        
+//     }
+//     update() {
+//         console.log("update mysql");
+        
+//     }
+//     delete() {
+//         console.log('delete mysql');
+        
+//     }
+// }
+
+// function addDatabase(database:Database){
 //     database.add();
 // }
 // addDatabase(new MySql());
